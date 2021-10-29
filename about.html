@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+<link rel="stylesheet" href="css/bootstrap.css" />
+    </head>
+    <body>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+
+@media (min-width:576px){
+.container {
+max-width: 540px;
+}
+}
+@media (min-width:768px){
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+
+@media (max-width:1200px){
+    main .container .about-box .about-box-left img{
+    max-width: 60%;
+    height: 90%;
+}
+}
+
+@media (max-width:992px){
+main .container .about-box{
+    display: flex;
+    flex-direction: column;
+}
+main .container .about-box .about-box-left, main .container .about-box .about-box-right{
+    width: 100%;
+}
+main .container .about-box .about-box-left img{
+    max-width: 45%;
+    height: 80%;
+}
+}
+
+@media (max-width:576px){
+    main .container .about-box .about-box-left img{
+    max-width: 60%;
+    height: 80%;
+}
+}
+
+
+
+
+
+
+.title-box{
+    display: flex;
+    justify-content: center;
+    margin:130px 0 40px 0;
+    
+}
+.title{
+    font-size: 32px;
+    letter-spacing: 3.5px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding:0px 40px 12px;
+    position: relative;
+    justify-content: center;
+}
+
+.title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 4px;
+    background-color: #e52320;
+}
+.title-text {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50%;
+    letter-spacing: 1.8px;
+    transform: translate(-50%, 50%);
+    font-size: 14px;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+}
+
+span {
+    display: block;
+    margin: 15px 0px;
+}
+
+.about-box{
+    display: flex;width: 100%;flex-direction: row;flex-wrap: wrap;position: relative;
+}
+.about-box-left{
+    display: flex;width: 50%;height: calc(100vh - 265px);align-items: center;justify-content: center;
+}
+
+.about-box-left img{
+    max-width: 50%;height:90%;
+}
+
+.about-box-right{
+    display: flex;flex:1;font-size: 20px;line-height: 25px;letter-spacing: 1px;justify-content: center;align-items: center;
+}
+        </style>
+        <header>
+
+        </header>
+
+        <main>
+<div class="container">
+    <div class="title-box">
+		<div class="title">About Us
+ <div class="title-text">Who are we?</div>
+		</div>
+		</div>
+        <div class="about-box">
+<div class="about-box-left">
+<img src="rsm/hand.lnk">
+</div>
+<div class="about-box-right">
+    <p>2014 yılın da yola çıktığımız iş hayatımızda bir çok şirkete grafik ve web hizmetleri verdik. Yeni teknolojilere adapte olarak, kendini alanında sürekli geliştiren deneyimli tasarım ekibimizle bir çok projeye imza attık. Müşterilerimizin taleplerini en iyi şekilde yerine getirmek için en son teknoloji ile hizmet vererek işletmenizin marka değerini ve müşteri ilgisini artırmak ana ilkemizdir.
+       <span><strong>Vizyonumuz:</strong> Kendini alanında ispatlamış uluslar arası saygın bir şirket haline gelebilmek.</span>
+       <span><strong>Misyonumuz:</strong> Çarpıcı ve yaratıcı grafikler tasarlayarak, müşterilerimizin rakiplerine fark atmasında katkıda bulunmak.</span>
+   </p>
+</div>
+        </div>
+
+</div>
+        </main>
+
+        <footer>
+    
+        </footer>
+    </body>
+
+   
+</html>
