@@ -3,7 +3,7 @@
     <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
-<link rel="stylesheet" href="css/bootstrap.css" />
+<!--<link rel="stylesheet" href="css/bootstrap.css" /> -->
     </head>
     <body>
         <style>
@@ -47,7 +47,7 @@ max-width: 540px;
 @media (max-width:1200px){
     main .container .about-box .about-box-left img{
     max-width: 60%;
-    height: 90%;
+    height: 75%;
 }
 }
 
@@ -55,13 +55,24 @@ max-width: 540px;
 main .container .about-box{
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 main .container .about-box .about-box-left, main .container .about-box .about-box-right{
-    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
 }
 main .container .about-box .about-box-left img{
-    max-width: 45%;
-    height: 80%;
+    max-width: 40%;
+    height: 40%;
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width:768px){
+    main .container .about-box .about-box-left img{
+    max-width: 50%;
+    height: 50%;
+    margin-bottom: 20px;
 }
 }
 
@@ -80,7 +91,7 @@ main .container .about-box .about-box-left img{
 .title-box{
     display: flex;
     justify-content: center;
-    margin:130px 0 40px 0;
+    margin:40px 0 40px 0;
     
 }
 .title{
@@ -117,24 +128,24 @@ main .container .about-box .about-box-left img{
     color: #000;
 }
 
-span {
+.about-box-right span {
     display: block;
     margin: 15px 0px;
 }
 
 .about-box{
-    display: flex;width: 100%;flex-direction: row;flex-wrap: wrap;position: relative;
+    display: flex;width: 100%;max-width: 100%;flex-direction: row;flex-wrap: wrap;position: relative;height: calc(100vh - 130px);
 }
 .about-box-left{
-    display: flex;width: 50%;height: calc(100vh - 265px);align-items: center;justify-content: center;
+    display: flex;flex-basis:50%;max-width:50%;align-items: center;justify-content: center;
 }
 
 .about-box-left img{
-    max-width: 50%;height:90%;
+    max-width: 60%;height:70%;
 }
 
 .about-box-right{
-    display: flex;flex:1;font-size: 20px;line-height: 25px;letter-spacing: 1px;justify-content: center;align-items: center;
+    display: flex;flex-basis:50%;max-width:50%;font-size: 21px;line-height: 28px;letter-spacing: 1px;justify-content: center;align-items: center;
 }
         </style>
         <header>
@@ -153,7 +164,7 @@ span {
 <img src="rsm/hand.lnk">
 </div>
 <div class="about-box-right">
-    <p>2014 yılın da yola çıktığımız iş hayatımızda bir çok şirkete grafik ve web hizmetleri verdik. Yeni teknolojilere adapte olarak, kendini alanında sürekli geliştiren deneyimli tasarım ekibimizle bir çok projeye imza attık. Müşterilerimizin taleplerini en iyi şekilde yerine getirmek için en son teknoloji ile hizmet vererek işletmenizin marka değerini ve müşteri ilgisini artırmak ana ilkemizdir.
+    <p>2014 yılın da yola çıktığımız iş hayatımızda bir çok şirkete grafik ve web hizmetleri verdik. Yeni teknolojilere adapte olarak, kendini alanında sürekli geliştiren deneyimli tasarım ekibimizle bir çok projeye imza attık.
        <span><strong>Vizyonumuz:</strong> Kendini alanında ispatlamış uluslar arası saygın bir şirket haline gelebilmek.</span>
        <span><strong>Misyonumuz:</strong> Çarpıcı ve yaratıcı grafikler tasarlayarak, müşterilerimizin rakiplerine fark atmasında katkıda bulunmak.</span>
    </p>
